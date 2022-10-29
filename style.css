@@ -117,11 +117,10 @@ ul{
     list-style: none;
 }
 .third_ul_1{
-    margin-top: 20px;
+    margin-top: 10px;
     color: var(--Light_Gray);
-    font-size: 0.86rem;
-    line-height: 20px;
-    padding-right: 80px;
+    font-size: 0.9rem;
+    line-height: 18px;
 }
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
@@ -155,7 +154,11 @@ ul{
 
         margin-bottom: 25px;
     }
-
+    .third_ul_1{
+        margin-top: 10px;
+        color: var(--Light_Gray);
+        font-size: 0.9rem;
+        line-height: 20px;}
     .first_h2{font-size: 1.5rem;}
 
     .first_p_1 {font-size: 1.1rem;}
