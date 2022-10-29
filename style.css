@@ -58,7 +58,7 @@ body{
     margin-bottom: 10px;
     font-weight: 700;
 }
-.first_p_2, .third_p_1{
+.first_p_2, .third_ul_1{
     font-size: 0.9rem;
 }
 
@@ -113,10 +113,13 @@ body{
     color: var(--white);
     background-color: var(--Cyan);
 }
-.third_p_1{
+ul{
+    list-style: none;
+}
+.third_ul_1{
     margin-top: 20px;
     color: var(--Light_Gray);
-    font-size: 0.9rem;
+    font-size: 0.86rem;
     line-height: 20px;
     padding-right: 80px;
 }
