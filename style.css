@@ -26,18 +26,17 @@ body{
 }
 
 .main_container{
-    display: grid; grid-template-columns: 310px;
-    grid-template-rows: 245px 227px auto;
-    border-radius: 10px;
+    display: grid; grid-template-columns: 313px;
+    grid-template-rows: 245px 227px 228px;
     overflow: hidden;
-    height: 720px;
-    width: 313px;
+    border-radius: 8px;
+    margin-bottom: 10px;
 }
 .main_container > section{
     padding: 25px 18px 22px;
 }
 
-/*First container*/
+/*--------------------First container--------------------*/
 
 .first_container{
     background-color: var(--white);
@@ -63,7 +62,7 @@ body{
     font-size: 0.9rem;
 }
 
-/*Second container*/
+/*--------------------Second container--------------------*/
 
 .second_container{
     color: var(--white);
@@ -92,6 +91,7 @@ body{
     margin-bottom: 25px;
 }
 .sign-up{
+    cursor: pointer;
     font-size: 1rem;
     font-weight: 700;
     letter-spacing: 2px;
@@ -101,33 +101,72 @@ body{
     align-items: center;
     background-color: var(--Bright_Yellow);
     border: none;
-    border-radius: 8px;
+    border-radius: 5px;
     width: 100%;
-    height: 49px;
+    height: 48px;
     box-shadow: 0px 2px 10px 2px rgba(19, 107, 103, 0.2),
     0px 3px 10px 3px rgba(19, 107, 103, 0.1);
 }
 
-/*third container*/
-
+/*--------------------third container--------------------*/
 .third_container{
     color: var(--white);
     background-color: var(--Cyan);
 }
 .third_p_1{
+    margin-top: 20px;
+    color: var(--Light_Gray);
     font-size: 0.9rem;
     line-height: 20px;
     padding-right: 80px;
 }
-
-
-
-
-
-
-/* 269px 231px 227px */
-
-
-
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+
+/*--------------------media queries--------------------*/
+
+@media screen and (min-width:768px) {
+    .attribution{
+        left: 0;
+        right: 0;
+        bottom: 10px;
+        position: fixed;
+    }
+
+    .main_container{
+        margin: unset;
+        display: grid; grid-template-columns: 320px 320px;
+        grid-template-rows: 225px 261px;
+    }
+    /*--------------------First container--------------------*/
+    .first_container {
+
+        grid-column: 1/3;
+    }
+    .main_container .first_container {
+
+        padding: 40px 35px;
+    }
+    .first_h2, .second_h2, .third_h2 {
+
+        margin-bottom: 25px;
+    }
+
+    .first_h2{font-size: 1.5rem;}
+
+    .first_p_1 {font-size: 1.1rem;}
+
+    .first_p_2 {font-size: 1rem;}
+
+    /*--------------------second container--------------------*/
+    .main_container .second_container {
+
+        padding: 38px 40px;
+    }
+    /*--------------------third container--------------------*/
+    .main_container .third_container {
+
+        padding: 38px 30px;
+    }
+}
